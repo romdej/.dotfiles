@@ -2,6 +2,12 @@
 	name="$GIT_USER_NAME"
 	email="$GIT_USER_EMAIL"
 
+[core]
+	autocrlf="input"
+
+[push]
+	default="current"
+
 # Work specific config
-[includeIf "gitdir:$WORK_DIRECTORY"]
+[includeIf "gitdir:$WORK_DIRECTORY/"]
 	path="$WORK_DIRECTORY/.gitconfig"

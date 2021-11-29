@@ -1,0 +1,20 @@
+#!/bin/sh
+
+# .bashrc
+if [ -f $HOME/.bashrc ]; then
+	if [ $(grep "# SETUP EXPANSION" $HOME/.bashrc | wc -l) -eq 0 ]; then
+		echo -e '\n# SETUP EXPANSION\nif [ -f $HOME/.config/shell/setup.sh ]; then\n source $HOME/.config/shell/setup.sh\nfi\n' >> $HOME/.bashrc
+		source $HOME/.bashrc
+	fi
+fi
+
+# .profile
+if [ -f $HOME/.profile ]; then
+	if [ $(grep "# SETUP EXPANSION" $HOME/.profile | wc -l) -eq 0 ]; then
+		echo -e '\n# SETUP EXPANSION\nif [ -f $HOME/.config/shell/setup.sh ]; then\n source $HOME/.config/shell/setup.sh\nfi\n' >> $HOME/.profile
+		source $HOME/.profile
+	fi
+fi
+
+
+

@@ -1,2 +1,5 @@
+# Binaries
+/usr/bin
+
 # Git scripts
 $HOME/.config/git

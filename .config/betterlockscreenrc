@@ -1,0 +1,36 @@
+# OPTIONS
+display_on=0
+span_image=false
+lock_timeout=300
+dim_level=0
+pixel_scale=10,1000
+solid_color=333333
+wallpaper_cmd="feh --bg-fill"
+quiet=false
+fx_list=()
+dim_level=0
+blur_level=0
+i3lockcolor_bin="i3lock"
+
+# THEME
+loginbox=00000066
+loginshadow=c3b1e100
+locktext="Type password to unlock"
+font="sans-serif"
+ringcolor=c3b1e1ff
+insidecolor=00000000
+separatorcolor=00000000
+ringvercolor=ffffffff
+insidevercolor=00000000
+ringwrongcolor=ffffffff
+insidewrongcolor=d23c3dff
+timecolor=ffffffff
+time_format="%H:%M:%S"
+greetercolor=ffffffff
+layoutcolor=ffffffff
+keyhlcolor=fcffb3ff
+bshlcolor=fcffb3ff
+verifcolor=ffffffff
+wrongcolor=d23c3dff
+modifcolor=fcffb3ff
+bgcolor=c3b1e1ff
